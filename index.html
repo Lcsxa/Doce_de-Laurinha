@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ============================================================
+       SEO — após o deploy na Vercel, troque og:image e twitter:image por
+       URLs absolutas: https://SEU-PROJETO.vercel.app/imagens/og-image.png
+       (o WhatsApp exige endereço absoluto para mostrar a prévia).
+       ============================================================ -->
+  <title>Doce de Laurinha | Apliques de Pasta Americana no Rio de Janeiro</title>
+  <meta name="description" content="Apliques de pasta americana feitos à mão pela Lidiane Magalhães: topos de bolo, nomes e personagens para aniversários e festas no Rio de Janeiro. Peça seu orçamento pelo WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#FAF6ED">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Doce de Laurinha | Apliques de Pasta Americana no Rio de Janeiro">
+  <meta property="og:description" content="Topos de bolo, nomes e personagens em pasta americana, feitos à mão para aniversários e festas.">
+  <meta property="og:image" content="imagens/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo da Doce de Laurinha sobre fundo creme">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="imagens/og-image.png">
+
+  <!-- Duas fontes apenas: Pacifico (marca e um título) + DM Sans (resto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="imagens/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <!-- Dados de negócio para busca local. Atualize se telefone/endereço mudarem. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Doce de Laurinha By Lidiane Magalhães",
+    "description": "Apliques de pasta americana, topos de bolo e personagens personalizados para festas e aniversários.",
+    "image": "imagens/og-image.png",
+    "telephone": "+5521974932021",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Augusto Leonardo, nº 22",
+      "addressLocality": "Parque Anchieta",
+      "addressRegion": "RJ",
+      "postalCode": "21620-090",
+      "addressCountry": "BR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "16"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO: discreto, sem fundo de vidro. Sombra só depois do scroll. -->
+  <header class="cabecalho" id="topo">
+    <div class="container cabecalho__inner">
+      <a class="marca" href="#inicio" aria-label="Doce de Laurinha, voltar ao início">
+        <img src="imagens/logo.png" alt="Doce de Laurinha by Lidiane Magalhães" width="600" height="458">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" aria-label="Menu principal">
+        <ul class="nav__lista">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#trabalhos">Trabalhos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <!-- WHATSAPP: número e texto também estão no início de js/script.js -->
+        <a class="btn btn--secundario btn--header" href="https://wa.me/5521974932021?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20apliques%20de%20pasta%20americana." target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO: ilustração original da marca, sem montagem. -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero__grade">
+        <div class="hero__texto reveal">
+          <p class="sobre-titulo">Apliques de pasta americana</p>
+          <h1 id="hero-titulo">Doce de Laurinha</h1>
+          <p>Faço topos de bolo, nomes e personagens em pasta americana para aniversários e festas. Cada detalhe é feito à mão, com capricho, para combinar com o tema da sua comemoração.</p>
+          <div class="acoes">
+            <a class="btn btn--primario" href="https://wa.me/5521974932021?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20apliques%20de%20pasta%20americana." target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+            <a class="btn btn--secundario" href="#trabalhos">Ver trabalhos</a>
+          </div>
+        </div>
+        <div class="hero__imagem reveal">
+          <img src="imagens/hero-menina.png" alt="Ilustração da Laurinha com cabelos cacheados, laço rosa e vestido azul de bolinhas, ao lado do nome da marca" width="700" height="754" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALERIA — 12 fotos em proporção 4:5.
+         Troque os arquivos em imagens/trabalho-01.jpg a trabalho-12.jpg
+         mantendo os nomes. Edite os alt e as legendas abaixo.
+         ============================================================ -->
+    <section class="secao secao--trabalhos" id="trabalhos" aria-labelledby="trabalhos-titulo">
+      <div class="container">
+        <header class="cabecalho-secao reveal">
+          <p class="sobre-titulo">Portfólio</p>
+          <h2 id="trabalhos-titulo">Trabalhos feitos à mão</h2>
+          <p>Aqui estão alguns apliques que já preparei. Topos de bolo, nomes, personagens e detalhes escolhidos de acordo com o tema da festa.</p>
+        </header>
+
+        <div class="galeria" id="galeria">
+          <button class="foto reveal" type="button" aria-label="Ampliar foto: topo de bolo com personagens">
+            <img src="imagens/trabalho-01.jpg" alt="Aplique de pasta americana com personagens para topo de bolo" width="800" height="1000" loading="lazy" decoding="async">
+            <span class="foto__legenda">Topo de bolo com personagens</span>
+          </button>
+          <button class="foto reveal" type="button" aria-label="Ampliar foto: nomes em pasta americana">
+            <img src="imagens/trabalho-02.jpg" alt="Nome recortado em pasta americana para decorar bolo de aniversário" width="800" height="800" loading="lazy" decoding="async">
+            <span class="foto__legenda">Nomes em pasta americana</span>
+          </button>
+          <button class="foto reveal" type="button" aria-label="Ampliar foto: detalhes para bolo de aniversário">
+            <img src="imagens/trabalho-03.jpg" alt="Detalhes delicados de pasta americana aplicados sobre bolo" width="800" height="650" loading="lazy" decoding="async">
+            <span class="foto__legenda">Detalhes para bolo de aniversário</span>
+          </button>
+          <button class="foto reveal" type="button" aria-label="Ampliar foto: apliques para tema de festa">
+            <img src="imagens/trabalho-04.jpg" alt="Apliques coloridos em pasta americana para tema de festa" width="800" height="900" loading="lazy" decoding="async">
+            <span class="foto__legenda">Apliques para tema de festa</span>
+          </button>
+          <button class="foto reveal" type="button" aria-label="Ampliar foto: personagem modelado à mão">
+            <img src="imagens/trabalho-05.jpg" alt="Personagem modelado à mão em pasta americana" width="800" height="800" loading="lazy" decoding="async">
+            <span class="foto__legenda">Personagem modelado à mão</span>
+          </button>
+          <button class="foto reveal" type="button" aria-label="Ampliar foto: confeitos e bordas em pasta">
+            <img src="imagens/trabalho-06.jpg" alt="Confeitos e bordas feitos com pasta americana" width="800" height="1050" loading="lazy" decoding="async">
+            <span class="foto__legenda">Confeitos e bordas em pasta</span>
+          </button>
+          <button class="foto reveal" type="button" aria-label="Ampliar foto: topo de bolo personalizado">
+            <img src="imagens/trabalho-07.jpg" alt="Topo de bolo personalizado com apliques de pasta americana" width="800" height="700" loading="lazy" decoding="async">
+            <span class="foto__legenda">Topo de bolo personalizado</span>
+          </button>
+          <button class="foto reveal" type="button" aria-label="Ampliar foto: nomes e números em pasta">
+            <img src="imagens/trabalho-08.jpg" alt="Nome e número em pasta americana para bolo de aniversário" width="800" height="850" loading="lazy" decoding="async">
+            <span class="foto__legenda">Nomes e números em pasta</span>
+          </button>
+          <button class="foto reveal" type="button" aria-label="Ampliar foto: detalhes delicados para o bolo">
+            <img src="imagens/trabalho-09.jpg" alt="Detalhes delicados modelados em pasta americana para bolo" width="800" height="800" loading="lazy" decoding="async">
+            <span class="foto__legenda">Detalhes delicados para o bolo</span>
+          </button>
+          <button class="foto reveal" type="button" aria-label="Ampliar foto: personagens para aniversário">
+            <img src="imagens/trabalho-10.jpg" alt="Personagens de pasta americana para bolo de aniversário infantil" width="800" height="950" loading="lazy" decoding="async">
+            <span class="foto__legenda">Personagens para aniversário</span>
+          </button>
+          <button class="foto reveal" type="button" aria-label="Ampliar foto: apliques com tema de festa">
+            <img src="imagens/trabalho-11.jpg" alt="Apliques de pasta americana seguindo o tema escolhido para a festa" width="800" height="750" loading="lazy" decoding="async">
+            <span class="foto__legenda">Apliques com tema de festa</span>
+          </button>
+          <button class="foto reveal" type="button" aria-label="Ampliar foto: acabamento feito à mão">
+            <img src="imagens/trabalho-12.jpg" alt="Acabamento manual de apliques em pasta americana" width="800" height="820" loading="lazy" decoding="async">
+            <span class="foto__legenda">Acabamento feito à mão</span>
+          </button>
+        </div>
+
+        <div class="secao__acao">
+          <a class="btn btn--secundario" href="https://www.instagram.com/docedelaurinha/" target="_blank" rel="noopener noreferrer">Ver mais no Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE: imagem grande à esquerda, texto à direita, alinhado à esquerda. -->
+    <section class="secao secao--sobre" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container sobre__grade">
+        <div class="sobre__imagem reveal">
+          <img src="imagens/elementos.png" alt="Ilustração do cupcake e do fuê da identidade da Doce de Laurinha" width="700" height="441" loading="lazy" decoding="async">
+        </div>
+        <div class="sobre__texto reveal">
+          <p class="sobre-titulo">Sobre a Lidiane</p>
+          <h2 id="sobre-titulo">Feito à mão, pela Lidiane</h2>
+          <p>Sou a Lidiane, mãe da Laurinha. Comecei a fazer apliques para a festa da minha filha e continuei porque gosto de trabalhar com as mãos e de ver o resultado na mesa da comemoração.</p>
+          <p>Modelo personagens, recorto nomes e monto topos de bolo com pasta americana. Gosto de ouvir a ideia de cada família e ajustar as cores e os detalhes ao tema escolhido. Cada pedido é feito com calma e capricho.</p>
+          <!-- Troque o link pelo endereço da sua avaliação no Google, se quiser. -->
+          <a class="texto-link" href="https://www.google.com/maps/search/?api=1&query=Doce+de+Laurinha+By+Lidiane+Magalhaes" target="_blank" rel="noopener noreferrer">5.0 no Google, com 16 avaliações</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO PEDIR: lista editorial com numeração, não três cartões iguais. -->
+    <section class="secao secao--pedido" id="como-pedir" aria-labelledby="pedido-titulo">
+      <div class="container">
+        <header class="cabecalho-secao reveal">
+          <p class="sobre-titulo">Como pedir</p>
+          <h2 id="pedido-titulo">Como fazer seu pedido</h2>
+          <p>Você me conta a ideia e eu respondo com o valor e o prazo. A data e a entrega são combinadas na conversa.</p>
+        </header>
+
+        <ol class="passos">
+          <li class="passo reveal">
+            <span class="passo__numero">01</span>
+            <div>
+              <h3>Conte a ideia</h3>
+              <p>Me diga o tema da festa, as cores, a idade da criança e se você quer nome, personagens ou um topo de bolo inteiro.</p>
+            </div>
+          </li>
+          <li class="passo reveal">
+            <span class="passo__numero">02</span>
+            <div>
+              <h3>Receba o orçamento</h3>
+              <p>Eu vejo o que dá para fazer, calculo o valor e te respondo pelo WhatsApp.</p>
+            </div>
+          </li>
+          <li class="passo reveal">
+            <span class="passo__numero">03</span>
+            <div>
+              <h3>Combine a entrega</h3>
+              <p>Ajustamos a data e o local da entrega direto na conversa. Não tem sistema de agenda nem formulário longo.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="pedido__rodape reveal">
+          <p>O pedido é feito pelo WhatsApp. É só me chamar e contar o que você precisa.</p>
+          <a class="btn btn--secundario" href="https://wa.me/5521974932021?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20apliques%20de%20pasta%20americana." target="_blank" rel="noopener noreferrer">Pedir orçamento</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO: dados e formulário em colunas diferentes. -->
+    <section class="secao secao--contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contato__grade">
+        <div class="contato__info reveal">
+          <p class="sobre-titulo">Contato</p>
+          <h2 id="contato-titulo">Vamos conversar</h2>
+          <p>Me chame para falar do seu bolo. Conte o tema e eu te respondo com o orçamento.</p>
+
+          <dl class="dados">
+            <div class="dados__linha">
+              <dt>WhatsApp</dt>
+              <dd><a href="https://wa.me/5521974932021?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20apliques%20de%20pasta%20americana." target="_blank" rel="noopener noreferrer">(21) 97493-2021</a></dd>
+            </div>
+            <div class="dados__linha">
+              <dt>Instagram</dt>
+              <dd><a href="https://www.instagram.com/docedelaurinha/" target="_blank" rel="noopener noreferrer">@docedelaurinha</a></dd>
+            </div>
+            <div class="dados__linha">
+              <dt>Endereço</dt>
+              <dd>
+                Rua Augusto Leonardo, nº 22<br>
+                Parque Anchieta, Rio de Janeiro - RJ<br>
+                CEP 21620-090<br>
+                <a class="texto-link" href="https://www.google.com/maps/dir/?api=1&destination=Rua+Augusto+Leonardo,+22,+Parque+Anchieta,+Rio+de+Janeiro+-+RJ,+21620-090" target="_blank" rel="noopener noreferrer">Como chegar</a>
+              </dd>
+            </div>
+          </dl>
+
+          <div class="mapa">
+            <iframe title="Mapa da Rua Augusto Leonardo, 22, no Parque Anchieta, Rio de Janeiro" src="https://www.google.com/maps?q=Rua%20Augusto%20Leonardo%2C%2022%2C%20Parque%20Anchieta%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021620-090&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <form class="formulario reveal" id="form-orcamento">
+          <h3>Conte seu pedido</h3>
+          <p class="formulario__aviso">Preencha e eu abro o WhatsApp com a sua mensagem.</p>
+
+          <div class="formulario__linha">
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required>
+            </div>
+            <div class="campo">
+              <label for="telefone">Telefone ou WhatsApp</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(21) 99999-9999" autocomplete="tel" required>
+            </div>
+          </div>
+
+          <div class="formulario__linha">
+            <div class="campo">
+              <label for="data">Data do evento</label>
+              <input type="date" id="data" name="data">
+            </div>
+            <div class="campo">
+              <label for="tema">Tema da festa</label>
+              <input type="text" id="tema" name="tema" placeholder="Ex.: jardim, unicórnio, dinossauro">
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte o que você quer para o bolo" required></textarea>
+          </div>
+
+          <button class="btn btn--primario btn--enviar" type="submit">Pedir orçamento</button>
+          <p class="formulario__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ ENXUTO -->
+  <footer class="rodape">
+    <div class="container rodape__grade">
+      <div class="rodape__marca">
+        <a href="#inicio" aria-label="Doce de Laurinha, voltar ao topo">
+          <img src="imagens/logo.png" alt="Doce de Laurinha by Lidiane Magalhães" width="600" height="458" loading="lazy" decoding="async">
+        </a>
+        <p>Apliques de pasta americana para festas e aniversários.</p>
+      </div>
+      <nav class="rodape__links" aria-label="Links do rodapé">
+        <a href="#inicio">Início</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="https://www.instagram.com/docedelaurinha/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+      <div class="rodape__contato">
+        <a href="https://wa.me/5521974932021?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20apliques%20de%20pasta%20americana." target="_blank" rel="noopener noreferrer">(21) 97493-2021</a>
+        <a href="https://www.instagram.com/docedelaurinha/" target="_blank" rel="noopener noreferrer">@docedelaurinha</a>
+        <p>Rua Augusto Leonardo, nº 22<br>Parque Anchieta, Rio de Janeiro - RJ<br>CEP 21620-090</p>
+      </div>
+    </div>
+    <div class="container rodape__base">
+      <p>© 2026 Doce de Laurinha By Lidiane Magalhães</p>
+    </div>
+  </footer>
+
+  <a class="whats-flutuante" href="https://wa.me/5521974932021?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20apliques%20de%20pasta%20americana." target="_blank" rel="noopener noreferrer" aria-label="Chamar no WhatsApp" title="Chamar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.5 2 2 6.5 2 12.04c0 1.77.46 3.5 1.34 5.02L2 22l5.07-1.33A10 10 0 1 0 12.04 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.01.79.8-2.94-.19-.3A8.2 8.2 0 1 1 12.04 20.2Zm4.5-6.13c-.25-.13-1.47-.73-1.7-.81-.23-.08-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.13-1.05-.39-2-1.23-.74-.45-1.23-1.01-1.37-1.19-.14-.17-.15-.63.08-.88.2-.2.45-.52.68-.78.23-.26.3-.44.45-.74.15-.3.08-.56-.04-.78-.11-.21-.57-1.37-.78-1.87-.21-.5-.42-.43-.57-.44h-.49c-.17 0-.44.06-.68.3-.23.25-.9.88-.9 2.13 0 1.25.92 2.46 1.05 2.63.13.17 1.81 2.76 4.39 3.87.61.26 1.09.42 1.46.54.61.2 1.17.17 1.61.1.49-.08 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.3Z"/></svg>
+  </a>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <button class="lightbox__fechar" type="button" id="lightbox-fechar" aria-label="Fechar foto ampliada">×</button>
+    <button class="lightbox__nav lightbox__nav--anterior" type="button" id="lightbox-anterior" aria-label="Foto anterior">‹</button>
+    <figure class="lightbox__conteudo">
+      <img id="lightbox-imagem" src="" alt="">
+      <figcaption id="lightbox-legenda"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--proxima" type="button" id="lightbox-proxima" aria-label="Próxima foto">›</button>
+    <span class="lightbox__contador" id="lightbox-contador"></span>
+  </div>
+</body>
+</html>
